@@ -29,18 +29,21 @@ mamba activate enigma
 Then move into the base directory of `my_package` and pip install the package in development mode:
 
 ```
+cd my_package
 pip install -e .
 ```
 
 ## Usage
 
-Once this environment is created, I can specify it as the kernel in VSCode. Then, as the top of the notebook that implements the functions in `my_package`, I use:
+Once this environment is created, I can specify it as the kernel in VSCode. Then, as the top of `notebooks/factor_analysis.ipynb` that implements the functions in `my_package`, I use:
 
 ```
 from my_package import functions
 ```
 
 To run tests, activate the conda environment `enigma`, navigate to the base directory of `my_package`, and type `pytest` on the terminal.
+
+Please see `notebooks/factor_analysis.ipynb` to see how to use the functions in `my_package` and confirm that they work as expected.
 
 ## Improvement
 - Currently, convergence is monitored using changes in $\Lambda$ and $\Psi$ matrices, but computing the likelihood instead may be simpler and more interpretable. But, the likelihood equation was long, and done > perfect.
