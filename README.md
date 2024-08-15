@@ -41,7 +41,11 @@ Once this environment is created, I can specify it as the kernel in VSCode. Then
 from my_package import functions
 ```
 
+## Tests
+
 To run tests, activate the conda environment `enigma`, navigate to the base directory of `my_package`, and type `pytest` on the terminal.
+
+## Example analysis
 
 Please see `notebooks/factor_analysis.ipynb` to see how to use the functions in `my_package` and confirm that they work as expected.
 
